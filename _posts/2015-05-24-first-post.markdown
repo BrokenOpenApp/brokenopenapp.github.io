@@ -43,10 +43,10 @@ goal, I suspect this means it will be very hard or impossible for them to add Pr
 support in a nice way.
 
 BrokenOpenApp in contrast, requires PHP, Postgresql and a mail server. If you want
-ProGuard support it requires Java and some ProGuard libs also installing. Ideally
-cron is needed, and maybe a message que will be an optional requirement later. Adding
-features at the expense of an easy install is a deliberate decision for the project,
-and I know that means it won't be for everyone.
+ProGuard support it requires Java, file store space and some ProGuard libs also
+installing. Ideally cron is needed, and maybe a message que will be an optional
+requirement later. Adding features at the expense of an easy install is a deliberate
+decision for the project, and I know that means it won't be for everyone.
 
 I owe a thanks to [ACRA Server from Marvin Labs](https://github.com/marvinlabs/acra-server).
 This is the project I started with and have heavily hacked on, and my work is under
