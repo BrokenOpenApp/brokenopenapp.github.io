@@ -33,6 +33,8 @@ It's a back end for ACRA that stores crashes and sorts them into issues.
 
 It supports multiple users and multiple projects, with access rights for this.
 
+Each project can take crashes from one or multiple apps.
+
 It supports ProGuard deobfuscation of your code.
 
 The official backend Acralyzer seems focused on being very easy to install, which
