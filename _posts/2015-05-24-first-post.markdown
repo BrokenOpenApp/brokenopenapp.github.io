@@ -48,7 +48,7 @@ installing. Ideally cron is needed, and maybe a message que will be an optional
 requirement later. Adding features at the expense of an easy install is a deliberate
 decision for the project, and I know that means it won't be for everyone.
 
-I owe a thanks to [ACRA Server from Marvin Labs](https://github.com/marvinlabs/acra-server).
+I owe a thanks to [ACRA Server from MarvinLabs](https://github.com/marvinlabs/acra-server).
 This is the project I started with and have heavily hacked on, and my work is under
 the same Apache Open Source license as it is.
 
