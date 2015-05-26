@@ -42,9 +42,9 @@ I guess is aimed at Android devs who maybe aren't system admins. While that's a 
 goal, I suspect this means it will be very hard or impossible for them to add ProGuard
 support in a nice way.
 
-BrokenOpenApp in contrast, requires PHP, Postgresql and a mail server. If you want
+BrokenOpenApp in contrast requires PHP, Postgresql, a mail server and a cron task. If you want
 ProGuard support it requires Java, file store space and some ProGuard libs also
-installing. Ideally cron is needed, and maybe a message que will be an optional
+installing. Maybe a message que will be an optional
 requirement later. Adding features at the expense of an easy install is a deliberate
 decision for the project, and I know that means it won't be for everyone.
 
