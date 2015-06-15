@@ -54,7 +54,7 @@ the same Apache Open Source license as it is.
 
 So for now, it's there, it very basically works. A lot of the web pages for common
 tasks are missing; such as ones to add other users to a project or even change a
-users password.
+users password (EDIT: password change now done).
 
 The plan is to set this up, find some projects that can start sending in some real
 data and slowly build up the feature set.
