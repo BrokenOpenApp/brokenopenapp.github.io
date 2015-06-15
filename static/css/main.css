@@ -3,6 +3,24 @@ html {
 	font-size: 14pt;
 }
 
+#headerbannerwrapper {
+	background: #ccc;
+	border-bottom: #999 2px solid;
+}
+
+#headerbanner {
+	padding: 30px 10px;
+	max-width: 1000px;
+	margin: 0 auto;
+	font-family: arial, sans-serif;
+}
+
+#headerbanner h1 {
+	font-size: 1.6em;
+	line-height: 1.5;
+	font-weight: bold;
+}
+
 #headerwrapper {
 	background: #ccc;
 	border-bottom: #999 2px solid;
@@ -82,6 +100,29 @@ html {
 	margin: 4px 4px 4px 20px;
 }
 
+
+#body ul.homecontent { 
+	padding: 10px 0 30px 0;
+}
+
+#body ul.homecontent li {
+	padding: 10px 0;
+	font-size: 1.2em;
+}
+
+#body ul.homecontent li a {
+	color: black;
+	font-style: italic;
+	text-decoration: none;
+}
+
+#body ul.homecontent li a b {
+	font-weight: bold;
+}
+#body ul.homecontent li a:hover {
+	font-style: normal;
+	text-decoration: underline;
+}
 
 #body ul.blogposts .date {
 	font-size: 0.8em;

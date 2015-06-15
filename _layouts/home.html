@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="{{ site.baseurl }}/static/css/reset.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/static/css/main.css" rel="stylesheet" />
+    <title>BrokenOpenApp - {{ page.title }}</title>
+	<meta name="viewport" content="initial-scale=1">
+  </head>
+
+  <body>
+
+	<div id="headerbannerwrapper">
+		<div id="headerbanner">
+			<h1>Open Source Android Crash Reporting with BrokenOpenApp + ACRA.</h1>
+		</div>
+	</div>
+
+
+	<div id="bodywrapper">
+		<div id="body">
+			{{ content }}
+			<ul class="homecontent">
+				<li><a href="news.html">Read the latest <b>news</b> on the blog</a></li>
+				<li><a href="http://github.com/brokenopenapp">Browse the latest code on <b>Github</b></a></li>
+			</ul>
+			
+			<ul class="blogposts">
+				{% for post in site.posts limit:5 %}
+					<li><span class="date">{{ post.date | date_to_string }}</span> <a class="title" href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+
+			
+		</div>
+	</div>
+
+
+	<div id="footerwrapper">
+		<div id="footer">
+			&copy; <a href="http://jmbtechnology.co.uk/">JMB Technology Limited</a> 2015.
+			<a href="https://twitter.com/brokenopenapp">Follow us on Twitter</a>
+		</div>
+	</div>
+
+  </body>
+</html>
