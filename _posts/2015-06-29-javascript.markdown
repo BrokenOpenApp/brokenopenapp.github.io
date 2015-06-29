@@ -12,33 +12,30 @@ When doing this, can you catch any JavaScript errors? Turns out you can.
 
 Simply set up a JavaScript to Android bridge:
 
-```
-  webView.addJavascriptInterface(new WebViewInterface(), "ACRA");
 
+    webView.addJavascriptInterface(new WebViewInterface(), "ACRA");
 
-	public class WebViewInterface  {
+    public class WebViewInterface  {
+        @android.webkit.JavascriptInterface
+        public void reportError(String message, String url, Integer lineNumber) {
+            ACRA.getErrorReporter().handleException(new RuntimeException(
+                "Javascript Error" + message + " in " + url + " on line " + lineNumber
+            ));
+        }
+    }
 
-		@android.webkit.JavascriptInterface
-		public void reportError(String message, String url, Integer lineNumber) {
-			ACRA.getErrorReporter().handleException(new RuntimeException(
-					"Javascript Error" + message + " in " + url + " on line " + lineNumber
-			));
-		}
-
-	}
-```
 
 Then setup a handler in JavaScript:
 
-```
+
     <script type="text/javascript">
-      window.onerror = function(message, url, lineNumber) {
-        ACRA.reportError(message,url,lineNumber);
-        return false;
-      };
+        window.onerror = function(message, url, lineNumber) {
+            ACRA.reportError(message,url,lineNumber);
+            return false;
+        };
     </script>
     <a onclick="doesnotexist.call(); return false;">Crash me now!</a>
-```
+
 
 And this error will now be logged to your server!
 
