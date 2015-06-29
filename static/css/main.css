@@ -101,7 +101,7 @@ html {
 }
 
 
-#body ul.homecontent { 
+#body ul.homecontent {
 	padding: 10px 0 30px 0;
 }
 
@@ -142,6 +142,12 @@ html {
 
 #body .postbody {
 	padding: 20px 0 20px 0;
+}
+
+#body pre {
+	margin: 20px 0;
+	padding: 20px;
+	border: 1px solid black;
 }
 
 #footerwrapper {
