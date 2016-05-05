@@ -1,0 +1,12 @@
+---
+layout: post
+title: Updates, Symfony 2.8, Vagrant for devs ...
+slug: updates
+created: 2015-05-05 09:15:00
+---
+
+Work on this is still progressing, but very slowly - and there is still a lot to be done on the UI/UX to unlock it's full power.
+
+However recently we updated the app to Symfony 2.8. We added a vagrant box so people who want to develop the app or run it's tests can do so very easily. And we updated the instructions in the UI/UX to use ACRA's new ConfigurationBuilder.
+
+Let us know what you think of it on our mailing list! https://groups.google.com/forum/#!forum/brokenopenapp
